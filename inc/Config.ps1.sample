@@ -5,8 +5,11 @@
 # win7x64
 # win81x64
 # windows-pe-x64
+# TODO : win10x64
 # TODO: server-2012
 # TODO: server-2012r2
+# TODO: server-2016
+# TODO: server-2019
 #############################
 $os = "server-2008r2"
 

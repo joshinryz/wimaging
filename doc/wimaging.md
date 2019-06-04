@@ -27,9 +27,10 @@ Gather tools, drivers and installation medias for them and continue setting up u
 ### Tasks
 
 - Use a recent x64 windows version to play nicely with powershell. Bear in mind, i686 (is anyone still using 32bit operatingsystems?) cannot boot a x64 Windows image.
-- Download and install [WAIK](http://www.microsoft.com/en-us/download/details.aspx?id=30652). You really only need the Windows PE wim; though the other tools might assist if you need to add new OSes or need to create a custom `unattend.xml`
-- Download / clone this repository to a convenient location like `C:/wimaging`
+- Download and install [WADK](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/download-winpe--windows-pe). Both the ADK and the Windows-PE addon.
+- Download / clone this repository to a convenient location like `C:\git\wimaging`
 - Copy contents of your windows DVD / ISO to `./sources/<osname_see_Config.ps1>/`. Also see `./install/directory.template`. If you want to keep the minimal files just copy: `sources/install.wim`; `boot/*`
+#TODO
 - Use [WSUS Offline](http://download.wsusoffline.net/) to download Windows updates for your OS'es locally. For simplicity also copy it next to the wimaging directory; eg. `C:/wsusoffline`.
 
 ## II. Configure wimaging
